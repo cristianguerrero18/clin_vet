@@ -6,10 +6,6 @@ services:
     mem_limit: 512m
     ports:
       - "8080:8080"
-    environment:
-      DB_URL: jdbc:mysql://clinica_vet:3306/clinica_veterinaria?createDatabaseIfNotExist=true&serverTimezone=UTC
-      DB_USER_NAME: root
-      DB_PASSWORD: 1234
     restart: always
     depends_on:
       clinica_vet:
